@@ -1,0 +1,103 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #015c51;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+.title {
+  padding-top: 2rem;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+
+  &__figure {
+    min-height: 35rem;
+    min-width: 25rem;
+
+    img {
+      height: 50vh;
+    }
+  }
+
+  &__word {
+    * {
+      font-size: 200%;
+      display: inline-block;
+      width: 1.7rem;
+      margin: 0.7rem;
+      padding-bottom: 0.5rem;
+      border-bottom: solid white 1px;
+      text-transform: uppercase;
+      color: #015c51;
+    }
+  }
+}
+
+.alphabet {
+  max-width: 55rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-around;
+
+  * {
+    font-size: 270%;
+    width: 4rem;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    align-items: baseline;
+    background-color: rgba(255, 255, 255, 0.075);
+    border-radius: 1rem;
+    border: none;
+    color: white;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.164);
+    }
+    &:active {
+      background-color: rgba(255, 255, 255, 0.336);
+    }
+  }
+}
+.message {
+  font-size: 200%;
+
+  p {
+    display: none;
+  }
+
+  button {
+    background-color: inherit;
+    background-color: rgba(255, 255, 255, 0.089);
+    border: none;
+    color: white;
+    border-radius: 1rem;
+    width: 10rem;
+    margin: 2rem;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.123);
+    }
+
+    &:active {
+      background-color: rgba(255, 255, 255, 0.24);
+    }
+  }
+}
